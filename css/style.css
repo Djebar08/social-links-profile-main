@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inter", sans-serif;
+    background-color: var(--Off-Black);
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+img{
+    width: 75px;
+    border-radius: 50%;
+}
+.card{
+   background-color: var(--Dark-Grey);
+   color: var(--White);
+   margin: 1rem;
+   padding: 2rem;
+   max-width: 400px;
+   text-align: center;
+   border-radius: 0.75rem;
+}
+ .card .name{
+    font-size: 1.75rem;
+    margin-top: .5rem;
+} 
+ .card .location{
+    color: var(--Green);
+    font-weight: 700;
+    margin: 0.5em 0 1.5rem;
+} 
+
+.card ul{
+    margin-top: 1.75rem;
+    list-style: none;
+}
+.card ul li:not(:last-child){
+    margin-bottom: 1rem;
+}
+.card ul li a{
+    display: block;
+    text-decoration: none;
+    background-color: var(--Grey);
+    color: var(--White);
+    padding: 1rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+}
+.card ul li a:hover{
+    background-color: var(--Green);
+    color: var(--Off-Black);
+}
+
+
+
